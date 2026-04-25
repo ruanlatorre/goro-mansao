@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 
 const Register = () => {
   const [name, setName] = useState('');
@@ -34,7 +32,6 @@ const Register = () => {
 
   return (
     <div className="bg-black text-on-surface font-space min-h-screen flex flex-col">
-      <Header />
       <main className="flex-1 flex items-center justify-center px-4 pt-20">
         <div className="glass-card p-10 w-full max-w-md relative overflow-hidden group shadow-[0_0_50px_rgba(0,238,252,0.2)]">
           <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-secondary-container to-transparent"></div>
@@ -96,7 +93,6 @@ const Register = () => {
           </div>
         </div>
       </main>
-      <Footer />
     </div>
   );
 };

@@ -1,6 +1,4 @@
 import React from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 import { useCart } from '../context/CartContext';
 import { useLocation } from 'react-router-dom';
 
@@ -28,7 +26,6 @@ const Catalog = () => {
 
   return (
     <div className="bg-black text-on-surface font-space">
-      <Header />
       <main className="pt-32 pb-20 px-8 max-w-7xl mx-auto">
         <div id="lineup" className="mb-16">
           <p className="text-primary-container font-label-caps mb-4 uppercase">EXPERIÊNCIA SENSORIAL</p>
@@ -92,7 +89,6 @@ const Catalog = () => {
           </div>
         </div>
       </main>
-      <Footer />
     </div>
   );
 };

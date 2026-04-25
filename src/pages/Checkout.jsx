@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 
 const Checkout = () => {
   const { cart, cartTotal, clearCart } = useCart();
@@ -82,8 +80,6 @@ const Checkout = () => {
 
   return (
     <div className="bg-surface-container-lowest text-on-surface font-space min-h-screen">
-      <Header />
-      
       <main className="pt-32 pb-20 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
           {/* Left Column: Form */}
@@ -278,7 +274,6 @@ const Checkout = () => {
           </div>
         </div>
       </main>
-      <Footer />
     </div>
   );
 };

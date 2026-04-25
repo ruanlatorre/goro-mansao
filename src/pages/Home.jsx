@@ -1,6 +1,4 @@
 import React from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 import { useCart } from '../context/CartContext';
 
 const Home = () => {
@@ -14,7 +12,6 @@ const Home = () => {
 
   return (
     <div className="bg-black text-on-surface font-space">
-      <Header />
       <main className="pt-20">
         {/* Hero Section */}
         <section className="relative min-h-[921px] flex items-center overflow-hidden bg-[#000000]">
@@ -123,7 +120,6 @@ const Home = () => {
           </div>
         </section>
       </main>
-      <Footer />
     </div>
   );
 };

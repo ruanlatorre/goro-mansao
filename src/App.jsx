@@ -7,6 +7,9 @@ import Checkout from './pages/Checkout';
 import Login from './pages/Login';
 import Register from './pages/Register';
 
+import Header from './components/Header';
+import Footer from './components/Footer';
+
 function ScrollToTop() {
   const { pathname, hash } = useLocation();
   React.useEffect(() => {
@@ -27,13 +30,19 @@ function App() {
     <CartProvider>
       <Router>
         <ScrollToTop />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/catalog" element={<Catalog />} />
-          <Route path="/checkout" element={<Checkout />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
-        </Routes>
+        <div className="flex flex-col min-h-screen bg-black">
+          <Header />
+          <div className="flex-grow">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/catalog" element={<Catalog />} />
+              <Route path="/checkout" element={<Checkout />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/register" element={<Register />} />
+            </Routes>
+          </div>
+          <Footer />
+        </div>
       </Router>
     </CartProvider>
   );
