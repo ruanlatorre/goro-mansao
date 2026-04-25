@@ -36,7 +36,6 @@ const Header = () => {
           <Link to="/catalog#lineup" className="font-space uppercase tracking-tighter font-bold text-gray-400 hover:text-white transition-all">LINEUP</Link>
           <Link to="/catalog#drops" className="font-space uppercase tracking-tighter font-bold text-gray-400 hover:text-white transition-all">DROPS</Link>
           <Link to="/catalog#colecoes" className="font-space uppercase tracking-tighter font-bold text-gray-400 hover:text-white transition-all">COLEÇÕES</Link>
-          <a className="font-space uppercase tracking-tighter font-bold text-gray-400 hover:text-white transition-all" href="#footer">CONTATO</a>
         </nav>
 
         <div className="flex items-center gap-6">
@@ -87,7 +86,6 @@ const Header = () => {
               <Link to="/catalog#lineup" onClick={() => setIsMenuOpen(false)} className="text-2xl font-space uppercase tracking-widest font-black text-white hover:text-[#BC00FF] transition-all">LINEUP</Link>
               <Link to="/catalog#drops" onClick={() => setIsMenuOpen(false)} className="text-2xl font-space uppercase tracking-widest font-black text-white hover:text-[#BC00FF] transition-all">DROPS</Link>
               <Link to="/catalog#colecoes" onClick={() => setIsMenuOpen(false)} className="text-2xl font-space uppercase tracking-widest font-black text-white hover:text-[#BC00FF] transition-all">COLEÇÕES</Link>
-              <a href="#footer" onClick={() => setIsMenuOpen(false)} className="text-2xl font-space uppercase tracking-widest font-black text-white hover:text-[#BC00FF] transition-all">CONTATO</a>
             </nav>
             
             <div className="w-full h-px bg-white/10"></div>

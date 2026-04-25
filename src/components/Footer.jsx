@@ -7,9 +7,9 @@ const Footer = () => {
         GORÓ DA MANSÃO
       </div>
       <div className="flex gap-8 flex-wrap justify-center">
-        <a className="font-space text-xs tracking-widest uppercase text-gray-600 hover:text-[#BC00FF] transition-all duration-150 transition-glow" href="https://instagram.com/goromansao" target="_blank" rel="noopener noreferrer">INSTAGRAM</a>
-        <a className="font-space text-xs tracking-widest uppercase text-gray-600 hover:text-[#BC00FF] transition-all duration-150 transition-glow" href="https://tiktok.com/@goromansao" target="_blank" rel="noopener noreferrer">TIKTOK</a>
-        <a className="font-space text-xs tracking-widest uppercase text-gray-600 hover:text-[#BC00FF] transition-all duration-150 transition-glow" href="https://youtube.com/goromansao" target="_blank" rel="noopener noreferrer">YOUTUBE</a>
+        <a className="font-space text-xs tracking-widest uppercase text-gray-600 hover:text-[#BC00FF] transition-all duration-150 transition-glow" href="https://www.instagram.com/mansaomaromba/" target="_blank" rel="noopener noreferrer">INSTAGRAM</a>
+        <a className="font-space text-xs tracking-widest uppercase text-gray-600 hover:text-[#BC00FF] transition-all duration-150 transition-glow" href="https://www.tiktok.com/@mansaomaromba" target="_blank" rel="noopener noreferrer">TIKTOK</a>
+        <a className="font-space text-xs tracking-widest uppercase text-gray-600 hover:text-[#BC00FF] transition-all duration-150 transition-glow" href="https://www.youtube.com/@mansaomaromba" target="_blank" rel="noopener noreferrer">YOUTUBE</a>
         <a className="font-space text-xs tracking-widest uppercase text-gray-600 hover:text-[#BC00FF] transition-all duration-150 transition-glow" href="/privacy">POLÍTICA DE PRIVACIDADE</a>
       </div>
       <div className="font-space text-xs tracking-widest uppercase text-gray-600">
