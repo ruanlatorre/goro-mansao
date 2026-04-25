@@ -1,0 +1,255 @@
+/* Global Layout */
+.app {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* Header */
+.header {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(13, 13, 13, 0.8);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--industrial-grey);
+}
+
+.header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  font-family: var(--font-headline);
+  font-weight: 900;
+  font-size: 1.5rem;
+  letter-spacing: -0.05em;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-link {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.nav-link:hover {
+  color: var(--primary);
+}
+
+/* Hero Section */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 80px;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-content {
+  max-width: 800px;
+}
+
+.hero-title {
+  font-size: clamp(3rem, 10vw, 8rem);
+  line-height: 0.9;
+  letter-spacing: -0.05em;
+  margin-bottom: 24px;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 40px;
+  opacity: 0.8;
+  max-width: 600px;
+}
+
+/* Buttons */
+.btn-primary {
+  background: var(--primary);
+  color: var(--on-primary);
+  padding: 20px 50px;
+  font-size: 1.2rem;
+  font-weight: 900;
+  clip-path: polygon(5% 0, 100% 0, 95% 100%, 0% 100%);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.btn-primary:hover {
+  transform: translateY(-5px) skewX(-5deg);
+  box-shadow: 10px 10px 0 var(--secondary);
+}
+
+.btn-buy {
+  background: transparent;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  padding: 12px 30px;
+  width: 100%;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+.btn-buy:hover {
+  background: var(--primary);
+  color: var(--on-primary);
+}
+
+/* Flavors Section */
+.flavors-section {
+  padding: var(--section-gap) 0;
+}
+
+.flavors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.flavor-card {
+  background: var(--surface-color);
+  padding: 40px;
+  border: 1px solid var(--industrial-grey);
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.flavor-card:hover {
+  border-color: var(--primary);
+  transform: translateY(-10px);
+}
+
+.flavor-img-wrapper {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.flavor-img {
+  max-height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 0 20px rgba(204, 255, 0, 0.2));
+  transition: transform 0.5s ease;
+}
+
+.flavor-card:hover .flavor-img {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.flavor-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.flavor-card p {
+  opacity: 0.7;
+  font-size: 0.9rem;
+}
+
+/* Comparison Section */
+.comparison-section {
+  padding: var(--section-gap) 0;
+  background-image: url('https://www.transparenttextures.com/patterns/concrete-wall-2.png');
+}
+
+.comparison-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 0;
+  margin-top: 60px;
+}
+
+.comp-card {
+  padding: 60px;
+  border: 1px solid var(--industrial-grey);
+}
+
+.comp-card h3 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.comp-card ul {
+  list-style: none;
+}
+
+.comp-card li {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 1.1rem;
+}
+
+.comp-card.common {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.comp-card.goro {
+  background: var(--surface-color);
+  border: 2px solid var(--primary);
+}
+
+.comp-card li::before {
+  content: '→';
+  color: var(--primary);
+}
+
+.comp-card.common li::before {
+  content: '×';
+  color: #ff3333;
+}
+
+/* Footer */
+.footer {
+  padding: 80px 0 40px;
+  border-top: 1px solid var(--industrial-grey);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 40px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  opacity: 0.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links { display: none; }
+  .hero-title { font-size: 4rem; }
+  .comparison-grid { grid-template-columns: 1fr; }
+  .container { padding: 0 20px; }
+}
